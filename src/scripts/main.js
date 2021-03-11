@@ -41,6 +41,14 @@ applicationElement.addEventListener("change", event => {
       console.log(`User wants to see posts since ${yearAsNumber}`)
     }
   })
+
+  applicationElement.addEventListener("click", (event) => {
+	
+	if (event.target.id.startsWith("edit")){
+		console.log("post clicked", event.target.id.split("--"))
+		console.log("the id is", event.target.id.split("--")[1])
+	}
+})
 /*
     This function performs one, specific task.
 
