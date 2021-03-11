@@ -2,6 +2,7 @@ import {getUsers, getPosts, usePostCollection} from "./data/DataManager.js"
 import {PostList} from "./feed/PostList.js"
 import {NavBar} from "./nav/NavBar.js"
 import {Footer} from "./nav/Footer.js"
+import {PostEntry} from "./feed/PostEntry.js"
 /**
  * Main logic module for what should happen on initial page load for Giffygram
  */
@@ -24,6 +25,10 @@ const showNavBar = () => {
 const showFooter = () => {
     const footerElement = document.querySelector("footer");
     footerElement.innerHTML = Footer();
+}
+const showPostEntry = () => {
+    const entryElement = document.querySelector(".entryForm");
+    entryElement.innerHTML = PostEntry();
 }
 
 const applicationElement = document.querySelector(".giffygram");
@@ -71,6 +76,7 @@ applicationElement.addEventListener("change", event => {
 */
 const startGiffyGram = () => {
     showNavBar();
+    showPostEntry();
   showPostList();
   showFooter();
 }
