@@ -47,3 +47,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 25%;
 }
 
+.entryForm {
+    margin-top: 80px;
+}
+.postList {
+    margin-bottom: 80px;
+}
