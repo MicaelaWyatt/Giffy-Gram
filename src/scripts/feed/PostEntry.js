@@ -20,7 +20,7 @@ export const PostEntry = () => {
             class="newPost__input newPost__description"
             placeholder="Story behind your gif..."></textarea>
 
-        <button id="newPost__submit">Save</button>
+        <button onClick="window.location.reload();" id="newPost__submit">Save</button>
         <button id="newPost__cancel">Cancel</button>
     </div>
     `
